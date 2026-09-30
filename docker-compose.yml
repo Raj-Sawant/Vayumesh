@@ -1,0 +1,41 @@
+version: "3.9"
+
+services:
+  pipeline-cpu:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        BASE_IMAGE: "ubuntu:22.04"
+    container_name: vayumesh-pipeline-cpu
+    volumes:
+      - ./data:/app/data:ro
+      - ./output_3d:/app/output_3d
+    command: ["--video", "/app/data/187401-880363244.mp4", "--fps", "1.0", "--output", "/app/output_3d"]
+    deploy:
+      resources:
+        limits:
+          cpus: "4"
+          memory: "8G"
+
+  pipeline-gpu:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        BASE_IMAGE: "nvidia/cuda:12.4.1-devel-ubuntu22.04"
+    container_name: vayumesh-pipeline-gpu
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+    volumes:
+      - ./data:/app/data:ro
+      - ./output_3d:/app/output_3d
+    command: ["--video", "/app/data/187401-880363244.mp4", "--fps", "1.0", "--output", "/app/output_3d"]
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]

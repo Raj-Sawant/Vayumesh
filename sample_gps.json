@@ -1,0 +1,57 @@
+[
+  {
+    "latitude": 28.6139,
+    "longitude": 77.2090,
+    "altitude": 216.0,
+    "yaw": 45.0,
+    "pitch": -2.5,
+    "roll": 0.8,
+    "rtcm_available": false,
+    "horizontal_accuracy": 1.5,
+    "vertical_accuracy": 2.0
+  },
+  {
+    "latitude": 28.6140,
+    "longitude": 77.2091,
+    "altitude": 215.8,
+    "yaw": 47.0,
+    "pitch": -2.3,
+    "roll": 0.5,
+    "rtcm_available": false,
+    "horizontal_accuracy": 1.3,
+    "vertical_accuracy": 1.8
+  },
+  {
+    "latitude": 28.6141,
+    "longitude": 77.2092,
+    "altitude": 215.5,
+    "yaw": 50.0,
+    "pitch": -2.0,
+    "roll": 0.2,
+    "rtcm_available": false,
+    "horizontal_accuracy": 1.2,
+    "vertical_accuracy": 1.5
+  },
+  {
+    "latitude": 28.6142,
+    "longitude": 77.2093,
+    "altitude": 215.2,
+    "yaw": 52.0,
+    "pitch": -1.8,
+    "roll": -0.1,
+    "rtcm_available": false,
+    "horizontal_accuracy": 1.0,
+    "vertical_accuracy": 1.2
+  },
+  {
+    "latitude": 28.6143,
+    "longitude": 77.2094,
+    "altitude": 215.0,
+    "yaw": 55.0,
+    "pitch": -1.5,
+    "roll": -0.3,
+    "rtcm_available": false,
+    "horizontal_accuracy": 0.8,
+    "vertical_accuracy": 1.0
+  }
+]
