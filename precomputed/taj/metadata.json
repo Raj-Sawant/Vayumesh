@@ -1,0 +1,84 @@
+{
+  "pipeline": {
+    "version": "2.0.0",
+    "name": "VayuMesh 2.0",
+    "run_timestamp": "2026-09-30T04:54:30.041341+00:00",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python_version": "3.13.12",
+    "torch_version": "2.14.0+cpu",
+    "device": "cpu",
+    "output_dir": "C:\\Users\\RAJ SAWANT\\Desktop\\Vayumesh2.0\\output_3d_taj"
+  },
+  "source_video": {
+    "path": "C:\\Users\\RAJ SAWANT\\Desktop\\Vayumesh2.0\\Taj Mahal, INDIA \ud83c\uddee\ud83c\uddf3  Drone View HD Video __1080p.mp4",
+    "filename": "Taj Mahal, INDIA \ud83c\uddee\ud83c\uddf3  Drone View HD Video __1080p.mp4",
+    "sha256_first4mb": "3ec0b84310967aab",
+    "fps": 30.0,
+    "total_frames": 3505,
+    "width": 1920,
+    "height": 1072,
+    "duration_sec": 116.83
+  },
+  "frame_extraction": {
+    "frames_extracted": 20,
+    "sample_paths": [
+      "output_3d_taj\\images\\000000.png",
+      "output_3d_taj\\images\\000001.png",
+      "output_3d_taj\\images\\000002.png",
+      "output_3d_taj\\images\\000003.png",
+      "output_3d_taj\\images\\000004.png"
+    ]
+  },
+  "model": {
+    "id": "facebook/VGGT-1B",
+    "hf_url": "https://huggingface.co/facebook/VGGT-1B/resolve/main/model.pt",
+    "cache_path": "C:\\Users\\RAJ SAWANT\\Desktop\\Vayumesh2.0\\.cache\\vggt_model.pt",
+    "checksum_sha256_1mb": "307a18dc27e95900",
+    "inference_resolution": "518x518"
+  },
+  "predictions": {
+    "depth_conf_mean": 2.959766149520874,
+    "depth_conf_median": 1.3825010061264038,
+    "depth_conf_p10": 1.0,
+    "depth_conf_p90": 6.26177978515625,
+    "point_cloud_raw_count": 3045840,
+    "scene_bbox_min": [
+      -1.670619311152734,
+      -0.5017983292749211,
+      -0.8093136052031196
+    ],
+    "scene_bbox_max": [
+      2.233015624438231,
+      0.47122040834491585,
+      3.094845442678576
+    ],
+    "scene_extent_xyz": [
+      3.903634935590965,
+      0.9730187376198369,
+      3.9041590478816954
+    ],
+    "camera_count": 20,
+    "avg_baseline_vggt_units": 0.38213834166526794,
+    "total_trajectory_vggt": 7.260628700256348
+  },
+  "mesh": {
+    "vertices": 434317,
+    "faces": 862812,
+    "is_watertight": false,
+    "bbox_min": [
+      -1.6589183807373047,
+      -0.44375646114349365,
+      -0.7768901586532593
+    ],
+    "bbox_max": [
+      2.2154276371002197,
+      0.4619622230529785,
+      3.028353214263916
+    ],
+    "bbox_extent": [
+      3.8743460178375244,
+      0.9057186841964722,
+      3.8052433729171753
+    ]
+  }
+}

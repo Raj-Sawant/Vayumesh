@@ -1,0 +1,30 @@
+# VayuMesh — Render.com deployment requirements
+# Viewer-only mode (no VGGT inference — model too large for cloud RAM)
+# Run inference locally → upload outputs → viewer shows results online
+
+# Core
+numpy==2.0.2
+Pillow==10.4.0
+scipy==1.13.1
+trimesh==4.4.9
+matplotlib==3.9.2
+plotly==5.24.1
+requests==2.32.3
+tqdm==4.66.5
+
+# Web UI
+gradio==5.17.1
+
+# 3D / mesh
+open3d==0.18.0
+
+# Video (for upload-and-process if RAM allows)
+opencv-python-headless==4.10.0.84
+
+# Utilities
+huggingface_hub==0.24.6
+safetensors==0.4.4
+einops==0.8.0
+
+# ONNX (sky seg)
+onnxruntime==1.19.2

@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: vayumesh-viewer
+    runtime: python
+    plan: standard          # 2 GB RAM — enough for viewer + plotly rendering
+    region: singapore       # closest to India
+    buildCommand: pip install -r requirements_render.txt
+    startCommand: python viewer_render.py
+    healthCheckPath: /
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.9"
+      - key: PORT
+        value: "7861"
+      - key: VAYUMESH_VIEWER_ONLY
+        value: "true"
+      - key: GRADIO_SERVER_NAME
+        value: "0.0.0.0"
+      - key: GRADIO_SERVER_PORT
+        value: "7861"

@@ -1,0 +1,40 @@
+{
+  "pipeline": {
+    "version": "2.0.0",
+    "run_id": "20260929_163133",
+    "ts": "2026-09-29T16:39:24.436355+00:00",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch": "2.14.0+cpu"
+  },
+  "video": {
+    "file": "mixkit-big-mosque-in-the-middle-of-a-city-from-the-34295-hd-ready.mp4",
+    "sha256_4mb": "89ca3ee2dd2a39b5",
+    "fps": 29.97002997002997,
+    "frames": 985,
+    "w": 1280,
+    "h": 720,
+    "duration": 32.87
+  },
+  "model": {
+    "id": "facebook/VGGT-1B",
+    "url": "https://huggingface.co/facebook/VGGT-1B/resolve/main/model.pt"
+  },
+  "frames": 17,
+  "confidence": {
+    "mean": 5.717703342437744,
+    "p50": 5.359360694885254,
+    "p10": 1.0,
+    "p90": 10.75667667388916
+  },
+  "cameras": 17,
+  "mesh": {
+    "vertices": 160956,
+    "faces": 318006,
+    "watertight": false,
+    "extent": [
+      1.5244274139404297,
+      0.49487173557281494,
+      1.3105421960353851
+    ]
+  }
+}
